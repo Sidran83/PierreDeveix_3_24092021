@@ -4,26 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OhMyFood!</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <script src="https://kit.fontawesome.com/da3e0552c2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
-  <header>
-    <div id="logo"></div>
+  <header class="header">
+    <div class="header__logo"></div>
+    <form class="header__search">
+      <i class="fas fa-map-marker-alt"></i>
+      <input placeholder="Paris, Belleville">
+      <div>
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <button>Explorer nos restaurants</button>
+      </div>
+    </form>
+
   </header>
 
   <div id="bloc-page">
 
-    <section id="search">
-    </section>
-
-    <section id="explanation">
+    <section id="description">
+      <h1>Fonctionnement</h1>
+      <button>Choisissez un restaurant</button>
+      <button>Composez votre menu</button>
+      <button>Dégustez au restaurant</button>
     </section>
 
     <section id="restaurants">
+      <h1>Restaurants</h1>
+      <a href="#">La palette du goût</a>
+      <a href="#">La note enchantée</a>
+      <a href="#">A la française</a>
+      <a href="#">Le délice des sens</a>
     </section>
-  </div>
 
-  <footer>
-  </footer>
+    <footer>
+
+      <p>Proposer un restaurant</p>
+      <p>Devenir partenaire</p>
+      <p>Mentions légales</p>
+      <p>Contact</p>
+    </footer>
+
+  </div>
 </body>
 </html>
