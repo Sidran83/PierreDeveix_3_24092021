@@ -5,8 +5,16 @@
 .header__logo {
   background-image: url("../mockups/images/logo/ohmyfood.png");
   height: 100px;
+  background-repeat: no-repeat;
 }
 
 .header__search {
 
+}
+
+#searchbar {
+  border: solid;
+  input {
+    border: none;
+  }
 }

@@ -1,6 +1,14 @@
 .header__logo {
   background-image: url("../mockups/images/logo/ohmyfood.png");
   height: 100px;
+  background-repeat: no-repeat;
+}
+
+#searchbar {
+  border: solid;
+}
+#searchbar input {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
