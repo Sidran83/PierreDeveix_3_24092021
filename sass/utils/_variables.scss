@@ -2,5 +2,29 @@ $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 
+$background-gray: #F6F6F6;
+
+$shadow: 0 3px 6px rgba(0,0,0,0.2);
+
+@mixin button-gradient {
+  background: linear-gradient($colour-secondary, $colour-primary);
+}
+
+@mixin button-shape {
+  font-family: $font-text;
+  font-size: 25px;
+  padding: 23px;
+  font-weight: bold;
+  border: none;
+}
+
+@mixin button-margin {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 $font-title: 'Shrikhand';
 $font-text: 'Roboto';
+$font-size: 25px;

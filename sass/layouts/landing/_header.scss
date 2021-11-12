@@ -17,7 +17,7 @@
     input {
       border: none;
       font-family: $font-text;
-      font-size: 25px;
+      font-size: $font-size;
       background-color: #E9E9E9;
       font-weight: 500;
     }
@@ -26,6 +26,7 @@
   #description {
     text-align: center;
     background-color: #F6F6F6;
+    padding-bottom: 50px;
 
     h1 {
       font-family: $font-title;
@@ -42,16 +43,15 @@
 
   #button {
     text-align: center;
+    background-color: $background-gray;
 
     input {
-      background-color: $colour-secondary;
-      color: white;
+      @include button-gradient;
+      @include button-shape;
+      @include button-margin;
       border-radius: 50px;
-      font-family: $font-text;
-      font-size: 25px;
-      padding: 23px;
-      font-weight: bold;
-      border: none;
+      color: white;
+      box-shadow: $shadow;
     }
   }
 }

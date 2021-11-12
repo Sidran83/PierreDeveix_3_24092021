@@ -23,6 +23,7 @@
 .header__search #description {
   text-align: center;
   background-color: #F6F6F6;
+  padding-bottom: 50px;
 }
 .header__search #description h1 {
   font-family: "Shrikhand";
@@ -36,16 +37,69 @@
 }
 .header__search #button {
   text-align: center;
+  background-color: #F6F6F6;
 }
 .header__search #button input {
-  background-color: #FF79DA;
-  color: white;
-  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
   font-family: "Roboto";
   font-size: 25px;
   padding: 23px;
   font-weight: bold;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.explanation h1 {
+  text-align: center;
+}
+
+.explanation__button {
+  display: flex;
+  text-align: center;
+  background-color: #F6F6F6;
+  width: 30%;
+  font-size: 25px;
+  border-radius: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.explanation__button .number {
+  align-self: center;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  font-size: 14px;
+  padding: 3px;
+  margin-left: -13px;
+}
+.explanation__button i {
+  align-self: center;
+  color: #E9E9E9;
+  padding-left: 16px;
+}
+.explanation__button button {
+  align-self: center;
+  background-color: #F6F6F6;
+  font-family: "Roboto";
+  font-size: 25px;
+  padding: 23px;
+  font-weight: bold;
+  border: none;
+}
+
+.card__image img {
+  width: 200px;
+  height: 200px;
 }
 
 /* Font and Icons */
