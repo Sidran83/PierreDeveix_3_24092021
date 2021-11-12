@@ -2,12 +2,22 @@ footer {
   background-color: #383838;
   color: white;
   padding-left: 12px;
+  padding-bottom: 30px;
 
   .footer__logo {
     font-family: $font-title;
     color: white;
     margin-top: 0px;
     padding-top: 40px;
+  }
+
+  .footer__link {
+    display: flex;
+
+    i {
+      align-self: center;
+      padding-right: 8px;
+    }
   }
 
   p {
