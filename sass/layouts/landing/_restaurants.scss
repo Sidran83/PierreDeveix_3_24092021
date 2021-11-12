@@ -1,5 +1,7 @@
 .restaurants {
   text-align: center;
+  background-color: $background-gray;
+  padding-bottom: 100px;
 }
 
 .card {
@@ -7,6 +9,7 @@
   margin: auto;
   border-radius:  15px;
   box-shadow: $shadow;
+  margin-bottom: 20px;
 
   .card__image {
 

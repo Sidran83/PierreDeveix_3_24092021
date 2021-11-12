@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+footer {
+  background-color: #383838;
+  color: white;
+  padding-left: 12px;
+}
+footer .footer__logo {
+  font-family: "Shrikhand";
+  color: white;
+  margin-top: 0px;
+  padding-top: 40px;
+}
+footer p {
+  font-weight: bold;
+}
+
 .header__logo {
   background-image: url("../mockups/images/logo/ohmyfood.png");
   height: 100px;
@@ -99,6 +114,8 @@
 
 .restaurants {
   text-align: center;
+  background-color: #F6F6F6;
+  padding-bottom: 100px;
 }
 
 .card {
@@ -106,6 +123,7 @@
   margin: auto;
   border-radius: 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 .card .card__image img {
   width: 100%;
