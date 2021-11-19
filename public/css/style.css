@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto";
+}
+
 footer {
   background-color: #383838;
   color: white;
@@ -149,6 +153,19 @@ footer p {
 .card .card__icon {
   align-self: center;
   font-size: 30px;
+}
+.card .card__icon .heart-full {
+  display: none;
+}
+.card .card__icon:hover .heart-border {
+  display: none;
+}
+.card .card__icon:hover .heart-full {
+  background: linear-gradient(#FF79DA, #9356DC);
+  display: block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .card .card__text h1 {
   font-size: 26px;

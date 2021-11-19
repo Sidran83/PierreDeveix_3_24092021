@@ -32,6 +32,24 @@
   .card__icon  {
     align-self: center;
     font-size: 30px;
+
+    .heart-full {
+      display: none;
+    }
+  }
+
+  .card__icon:hover {
+    .heart-border {
+      display: none;
+    }
+    .heart-full {
+      @include button-gradient;
+
+      display: block;
+      background-clip: text;
+        -webkit-background-clip: text;
+      color: transparent;
+    }
   }
 
 
