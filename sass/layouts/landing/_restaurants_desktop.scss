@@ -2,14 +2,45 @@
   text-align: center;
   background-color: $background-gray;
   padding-bottom: 100px;
+
+  h1 {
+    text-align: left;
+  }
 }
 
 .card {
+  position: relative;
+  z-index: 1;
   width: 50%;
   margin: auto;
   border-radius:  15px;
-  box-shadow: $shadow;
+
   margin-bottom: 20px;
+
+  .new-info {
+    z-index: 2;
+    position: relative;
+    color: green;
+    width: 86px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    top: 12%;
+    left: 85%;
+
+    p {
+      text-align: center;
+      margin-top: 4px;
+      margin-bottom: 4px;
+
+    }
+  }
+
+  .new-restaurant {
+    box-shadow: $shadow;
+  }
+
 
   .card__image {
 
@@ -32,6 +63,10 @@
   .card__icon  {
     align-self: center;
     font-size: 30px;
+
+    .heart-border {
+        color: gray;
+      }
 
     .heart-full {
       display: none;

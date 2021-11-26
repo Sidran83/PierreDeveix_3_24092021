@@ -7,7 +7,7 @@
   text-align: center;
   background-color: $background-gray;
   width: 30%;
-  font-size: $font-size;
+  font-size: $font-size-desktop;
   border-radius: 16px;
   box-shadow: $shadow;
   @include button-margin;
@@ -35,3 +35,4 @@
     @include button-shape;
   }
 }
+

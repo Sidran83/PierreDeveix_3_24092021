@@ -2,8 +2,10 @@
 @import "./base/body";
 @import "./layouts/footer";
 @import "./layouts/landing/header";
-@import "./layouts/landing/explanation";
-@import "./layouts/landing/restaurants";
+@import "./layouts/landing/explanation_desktop";
+@import "./layouts/landing/explanation_mobile";
+@import "./layouts/landing/restaurants_desktop";
+@import "./layouts/landing/restaurants_mobile";
 
 /* Font and Icons */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
