@@ -175,11 +175,10 @@ footer p {
   background-color: #F6F6F6;
   padding-bottom: 100px;
 }
-.restaurants h1 {
-  text-align: left;
+.restaurants h1 .title {
+  text-align: center;
 }
-
-.card {
+.restaurants .card {
   position: relative;
   z-index: 1;
   width: 50%;
@@ -187,8 +186,8 @@ footer p {
   border-radius: 15px;
   margin-bottom: 20px;
 }
-.card .new-info {
-  z-index: 2;
+.restaurants .card .new-infos {
+  z-index: 3;
   position: relative;
   color: green;
   width: 86px;
@@ -196,56 +195,59 @@ footer p {
   display: flex;
   justify-content: center;
   border-radius: 3px;
-  top: 12%;
+  top: 10%;
   left: 85%;
 }
-.card .new-info p {
+.restaurants .card .new-infos p {
   text-align: center;
   margin-top: 4px;
   margin-bottom: 4px;
 }
-.card .new-restaurant {
+.restaurants .card .new-restaurant {
+  z-index: 2;
+  position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
-.card .card__image img {
+.restaurants .card .new-restaurant .card__image img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.card .card__description {
+.restaurants .card .card__description {
   display: flex;
   justify-content: space-between;
   padding-left: 12px;
   padding-right: 12px;
 }
-.card .card__icon {
+.restaurants .card .card__description .card__text h1 {
+  font-size: 26px;
+}
+.restaurants .card .card__description .card__text p {
+  text-align: left;
+  font-size: 20px;
+}
+.restaurants .card .card__description .card__icon {
   align-self: center;
   font-size: 30px;
 }
-.card .card__icon .heart-border {
+.restaurants .card .card__description .card__icon .heart-border {
   color: gray;
 }
-.card .card__icon .heart-full {
+.restaurants .card .card__description .card__icon .heart-full {
   display: none;
 }
-.card .card__icon:hover .heart-border {
+.restaurants .card .card__description .card__icon:hover .heart-border {
   display: none;
 }
-.card .card__icon:hover .heart-full {
+.restaurants .card .card__description .card__icon:hover .heart-full {
   background: linear-gradient(#FF79DA, #9356DC);
   display: block;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-.card .card__text h1 {
-  font-size: 26px;
-}
-.card .card__text p {
-  text-align: left;
-  font-size: 20px;
 }
 
 @media all and (max-width: 785px) {
@@ -254,12 +256,20 @@ footer p {
     background-color: #F6F6F6;
     padding-bottom: 100px;
   }
-  .restaurants .title {
+  .restaurants h1 .title {
     margin: 8px;
+    text-align: left;
+  }
+  .restaurants .card {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    margin: auto;
     border-radius: 15px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
   }
-  .restaurants .new-restaurant .new-info {
+  .restaurants .card .new-infos {
     z-index: 2;
     position: relative;
     color: green;
@@ -268,64 +278,59 @@ footer p {
     display: flex;
     justify-content: center;
     border-radius: 3px;
+    top: 25%;
+    left: 84%;
   }
-  .restaurants .new-restaurant .new-info p {
+  .restaurants .card .new-infos p {
     text-align: center;
     font-size: 8px;
     margin-top: 4px;
     margin-bottom: 4px;
   }
-  .restaurants .new-restaurant .card {
-    z-index: 1;
-  }
-
-  .card {
-    width: 100%;
-    margin: auto;
+  .restaurants .card .new-restaurant {
     border-radius: 15px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
   }
-  .card .card__image img {
+  .restaurants .card .new-restaurant .card__image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-  .card .card__description {
+  .restaurants .card .new-restaurant .card__description {
     display: flex;
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 12px;
   }
-  .card .card__icon {
+  .restaurants .card .new-restaurant .card__description .card__text h1 {
+    font-size: 20px;
+  }
+  .restaurants .card .new-restaurant .card__description .card__text p {
+    text-align: left;
+    font-size: 18px;
+    color: gray;
+  }
+  .restaurants .card .new-restaurant .card__description .card__icon {
     align-self: center;
     font-size: 30px;
   }
-  .card .card__icon .heart-border {
+  .restaurants .card .new-restaurant .card__description .card__icon .heart-border {
     color: gray;
   }
-  .card .card__icon .heart-full {
+  .restaurants .card .new-restaurant .card__description .card__icon .heart-full {
     display: none;
   }
-  .card .card__icon:hover .heart-border {
+  .restaurants .card .new-restaurant .card__description .card__icon:hover .heart-border {
     display: none;
   }
-  .card .card__icon:hover .heart-full {
+  .restaurants .card .new-restaurant .card__description .card__icon:hover .heart-full {
     background: linear-gradient(#FF79DA, #9356DC);
     display: block;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-  }
-  .card .card__text h1 {
-    font-size: 20px;
-  }
-  .card .card__text p {
-    text-align: left;
-    font-size: 18px;
-    color: gray;
   }
 }
 /* Font and Icons */
