@@ -115,8 +115,11 @@ h6, span {
     margin-top: -40px;
   }
 }
-.info-list__step--active {
+.info-list__step:hover {
   background-color: #f2eafb;
+}
+.info-list__step:hover i {
+  color: #9356DC;
 }
 .info-list__step i {
   color: #777777;
@@ -129,9 +132,6 @@ h6, span {
     margin-top: 25px;
     margin-bottom: 10px;
   }
-}
-.info-list__step .i--active {
-  color: #9356DC;
 }
 
 .restaurants-card {

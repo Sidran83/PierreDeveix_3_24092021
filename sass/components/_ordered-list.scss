@@ -30,9 +30,14 @@
         margin-top: -40px;
       }
     }
-    &--active {
+    &:hover {
       background-color: lighten($colour-primary, 35%);
+
+      i {
+        color: $colour-primary;
+      }
     }
+
     i {
       color: darken($background-gray, 50%);
       font-size: 20px;
@@ -42,9 +47,6 @@
         margin-top: 25px;
         margin-bottom: 10px;
       }
-    }
-    .i--active {
-      color: $colour-primary;
     }
   }
 }
