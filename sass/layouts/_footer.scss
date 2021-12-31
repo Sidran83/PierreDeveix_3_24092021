@@ -1,27 +1,22 @@
-footer {
-  background-color: #383838;
-  color: white;
-  padding-left: 12px;
-  padding-bottom: 30px;
-
-  .footer__logo {
-    font-family: $font-title;
-    color: white;
-    margin-top: 0px;
-    padding-top: 40px;
-  }
-
-  .footer__link {
-    display: flex;
-
-    i {
-      align-self: center;
-      padding-right: 8px;
+.footer {
+    background-color: darken($background-gray, 75%);
+    padding: 25px 25px 35px 25px;
+    font-size: 1rem;
+    @include from-big-tablet {
+        text-align: center;
     }
-  }
-
-  p {
-    font-weight: bold;
-  }
+    &__link, span, i {
+        color: white;
+    }
+    span {
+        font-family: $font-title;
+        display: inline-block;
+        padding-bottom: 8px;
+    }
+    &__item {
+        padding-top: 9px;
+    }
+    i {
+        padding-right: 7px;
+    }
 }
-

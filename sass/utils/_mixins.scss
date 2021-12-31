@@ -1,37 +1,61 @@
 @mixin background-gray-color {
-    background-color: $background-gray;
+  background-color: $background-gray;
 }
 
 @mixin block-padding-y {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 @mixin block-margin-x {
-    margin: 0 20px;
+  margin: 0 20px;
 }
-
 
 
 @mixin box-shadow {
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
 }
 
+@mixin border-radius {
+  border-radius: 15px;
+}
 
+@mixin card-content-padding {
+  padding: 14px 22px 14px 18px;
+}
 
+@mixin text-padding-top {
+  padding-top: 4px;
+}
+
+@mixin empty-heart-icon {
+  font-size: 1.5rem;
+  color: darken($background-gray, 70%);
+}
+
+@mixin filled-heart-icon {
+  animation: heart-animation 500ms ease-in-out;
+  opacity: 1;
+  background:linear-gradient(0deg, $colour-secondary 0%, $colour-primary 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+
+// RESPONSIVITY
 @mixin from-small-tablet {
-    @media all and (min-width: map-get($breakpoints, small-tablet)){
-        @content;
-    }
+  @media all and (min-width: map-get($breakpoints, small-tablet)){
+    @content;
+  }
 }
 
 @mixin from-big-tablet {
-    @media all and (min-width: map-get($breakpoints, big-tablet)){
-        @content;
-    }
+  @media all and (min-width: map-get($breakpoints, big-tablet)){
+    @content;
+  }
 }
 
 @mixin from-laptop {
-    @media all and (min-width: map-get($breakpoints, laptop)){
-        @content;
-    }
+  @media all and (min-width: map-get($breakpoints, laptop)){
+    @content;
+  }
 }

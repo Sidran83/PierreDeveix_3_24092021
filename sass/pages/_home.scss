@@ -76,3 +76,23 @@
     margin: 2rem 0 2rem 0.6rem;
   }
 }
+
+.restaurants {
+  @include block-padding-y;
+  @include background-gray-color;
+  &__list, h2 {
+    @include block-margin-x;
+    @include from-big-tablet {
+      margin: 0 50px;
+    }
+  }
+  &__list {
+    margin-top: 1.5rem;
+    @include from-big-tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+      margin-top: 2rem;
+    }
+  }
+}
