@@ -1,0 +1,17 @@
+.button {
+  background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: $medium;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0,0,0,0.25);
+  margin: 18px 0;
+  cursor: pointer;
+  transition: box-shadow 400ms, opacity 250ms;
+  &:hover {
+      opacity: 0.85;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  }
+}

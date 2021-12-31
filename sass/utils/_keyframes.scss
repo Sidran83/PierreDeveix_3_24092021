@@ -1,0 +1,30 @@
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes bubble-bounce {
+  0% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  50% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  75% {
+    transform: scale(1.4);
+    filter: blur(1.5px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+

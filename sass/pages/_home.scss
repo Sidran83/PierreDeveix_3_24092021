@@ -1,0 +1,65 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: center;
+  animation: loader 600ms 2.8s forwards;
+  &-block {
+    display: flex;
+    align-items: center;
+    &__bubble {
+      width: 2.2rem;
+      height: 2.2rem;
+      margin: 0.7rem;
+      border-radius: 100%;
+      background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+      animation: bubble-bounce 3s linear;
+      &--purple {
+          background-color: $colour-primary;
+      }
+      &--pink {
+          background-color: $colour-secondary;
+          animation-delay: 0.3s;
+      }
+      &--green {
+          background-color: $colour-tertiary;
+          animation-delay: 0.6s;
+      }
+    }
+  }
+}
+
+.location {
+    background-color: darken($background-gray, 5%);
+    text-align: center;
+    padding: 16px 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15) inset;
+    i, h6 {
+        color: darken($background-gray, 75%);
+    }
+    i {
+        font-size: 18px;
+    }
+    h6 {
+        display: inline-block;
+        margin-left: 12px;
+        font-weight: $regular;
+    }
+}
+
+.discover {
+    @include background-gray-color;
+    text-align: center;
+    padding: 42px 0;
+    h2 {
+        padding: 0 58px;
+    }
+    p {
+        padding: 14px 20px;
+    }
+}

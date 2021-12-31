@@ -1,6 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes bubble-bounce {
+  0% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  50% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  75% {
+    transform: scale(1.4);
+    filter: blur(1.5px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto";
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 100;
+}
+
+h6, span {
+  font-size: 1.1rem;
+}
+
+.button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  margin: 18px 0;
+  cursor: pointer;
+  transition: box-shadow 400ms, opacity 250ms;
+}
+.button:hover {
+  opacity: 0.85;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -333,6 +405,72 @@ footer p {
     color: transparent;
   }
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: center;
+  animation: loader 600ms 2.8s forwards;
+}
+.loader-block {
+  display: flex;
+  align-items: center;
+}
+.loader-block__bubble {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0.7rem;
+  border-radius: 100%;
+  background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  animation: bubble-bounce 3s linear;
+}
+.loader-block__bubble--purple {
+  background-color: #9356DC;
+}
+.loader-block__bubble--pink {
+  background-color: #FF79DA;
+  animation-delay: 0.3s;
+}
+.loader-block__bubble--green {
+  background-color: #99E2D0;
+  animation-delay: 0.6s;
+}
+
+.location {
+  background-color: #e9e9e9;
+  text-align: center;
+  padding: 16px 0;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15) inset;
+}
+.location i, .location h6 {
+  color: #373737;
+}
+.location i {
+  font-size: 18px;
+}
+.location h6 {
+  display: inline-block;
+  margin-left: 12px;
+  font-weight: 400;
+}
+
+.discover {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 42px 0;
+}
+.discover h2 {
+  padding: 0 58px;
+}
+.discover p {
+  padding: 14px 20px;
+}
+
 /* Font and Icons */
 
 /*# sourceMappingURL=style.css.map */
