@@ -1,3 +1,37 @@
 @mixin background-gray-color {
     background-color: $background-gray;
 }
+
+@mixin block-padding-y {
+    padding: 50px 0;
+}
+
+@mixin block-margin-x {
+    margin: 0 20px;
+}
+
+
+
+@mixin box-shadow {
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+}
+
+
+
+@mixin from-small-tablet {
+    @media all and (min-width: map-get($breakpoints, small-tablet)){
+        @content;
+    }
+}
+
+@mixin from-big-tablet {
+    @media all and (min-width: map-get($breakpoints, big-tablet)){
+        @content;
+    }
+}
+
+@mixin from-laptop {
+    @media all and (min-width: map-get($breakpoints, laptop)){
+        @content;
+    }
+}
