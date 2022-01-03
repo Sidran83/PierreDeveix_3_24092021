@@ -1,0 +1,9 @@
+.banner-menu {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  @include from-big-tablet {
+    height: 24rem;
+    object-position: 0 60%;
+  }
+}

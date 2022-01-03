@@ -218,313 +218,38 @@ h6, span {
   padding-right: 7px;
 }
 
-.header__logo {
-  background-image: url("../mockups/images/logo/ohmyfood.png");
-  height: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.header__search #searchbar {
-  text-align: center;
-  background-color: #E9E9E9;
-  font-size: 25px;
-  padding-top: 14px;
-}
-.header__search #searchbar input {
-  border: none;
-  font-family: "Roboto";
-  font-size: 25px;
-  background-color: #E9E9E9;
-  font-weight: 500;
-}
-.header__search #description {
-  text-align: center;
-  background-color: #F6F6F6;
-  padding-bottom: 50px;
-}
-.header__search #description h1 {
-  font-family: "Shrikhand";
-  margin: 0;
-  padding-top: 10px;
-}
-.header__search #description p {
-  font-family: "Roboto";
-  font-size: 23px;
-  padding-bottom: 10px;
-}
-.header__search #button {
-  text-align: center;
-  background-color: #F6F6F6;
-}
-.header__search #button input {
-  background: linear-gradient(#FF79DA, #9356DC);
-  font-family: "Roboto";
-  font-size: 25px;
-  padding: 23px;
-  font-weight: bold;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 50px;
-  color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.explanation h1 {
-  text-align: center;
-}
-
-.explanation__button {
-  display: flex;
-  text-align: center;
-  background-color: #F6F6F6;
-  width: 30%;
-  font-size: 25px;
-  border-radius: 16px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.explanation__button .number {
-  align-self: center;
-  background-color: #9356DC;
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  font-size: 14px;
-  padding: 3px;
-  margin-left: -13px;
-}
-.explanation__button i {
-  align-self: center;
-  color: #E9E9E9;
-  padding-left: 16px;
-}
-.explanation__button button {
-  align-self: center;
-  background-color: #F6F6F6;
-  font-family: "Roboto";
-  font-size: 25px;
-  padding: 23px;
-  font-weight: bold;
-  border: none;
-}
-
-@media all and (max-width: 785px) {
-  .explanation {
-    margin: 8px;
-  }
-  .explanation h1 {
-    text-align: left;
-  }
-  .explanation .explanation__button {
-    display: flex;
-    text-align: center;
-    background-color: #F6F6F6;
-    width: 100%;
-    font-size: 25px;
-    border-radius: 16px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .explanation .explanation__button .number {
-    align-self: center;
-    background-color: #9356DC;
-    color: white;
-    border-radius: 50%;
-    width: 18px;
-    font-size: 14px;
-    padding: 3px;
-    margin-left: -13px;
-  }
-  .explanation .explanation__button i {
-    align-self: center;
-    color: #E9E9E9;
-    padding-left: 16px;
-  }
-  .explanation .explanation__button button {
-    align-self: center;
-    background-color: #F6F6F6;
-    font-family: "Roboto";
-    font-size: 25px;
-    padding: 23px;
-    font-weight: bold;
-    border: none;
-    font-size: 20px;
-  }
-}
-.restaurants {
-  text-align: center;
-  background-color: #F6F6F6;
-  padding-bottom: 100px;
-}
-.restaurants h1 .title {
-  text-align: center;
-}
-.restaurants .card {
-  position: relative;
-  z-index: 1;
-  width: 50%;
-  margin: auto;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-.restaurants .card .new-infos {
-  z-index: 3;
-  position: relative;
-  color: green;
-  width: 86px;
-  background-color: lightgreen;
-  display: flex;
-  justify-content: center;
-  border-radius: 3px;
-  top: 10%;
-  left: 85%;
-}
-.restaurants .card .new-infos p {
-  text-align: center;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-.restaurants .card .new-restaurant {
-  z-index: 2;
-  position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-}
-.restaurants .card .new-restaurant .card__image img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.restaurants .card .card__description {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-.restaurants .card .card__description .card__text h1 {
-  font-size: 26px;
-}
-.restaurants .card .card__description .card__text p {
-  text-align: left;
-  font-size: 20px;
-}
-.restaurants .card .card__description .card__icon {
-  align-self: center;
-  font-size: 30px;
-}
-.restaurants .card .card__description .card__icon .heart-border {
-  color: gray;
-}
-.restaurants .card .card__description .card__icon .heart-full {
-  display: none;
-}
-.restaurants .card .card__description .card__icon:hover .heart-border {
-  display: none;
-}
-.restaurants .card .card__description .card__icon:hover .heart-full {
-  background: linear-gradient(#FF79DA, #9356DC);
+header img {
+  width: 45%;
   display: block;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  margin: 18px auto;
+  padding-top: 16px;
+}
+@media all and (min-width: 481px) {
+  header img {
+    width: 200px;
+  }
 }
 
-@media all and (max-width: 785px) {
-  .restaurants {
-    text-align: center;
-    background-color: #F6F6F6;
-    padding-bottom: 100px;
-  }
-  .restaurants h1 .title {
-    margin: 8px;
-    text-align: left;
-  }
-  .restaurants .card {
-    z-index: 1;
-    position: relative;
-    width: 100%;
-    margin: auto;
-    border-radius: 15px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-  }
-  .restaurants .card .new-infos {
-    z-index: 2;
-    position: relative;
-    color: green;
-    width: 54px;
-    background-color: lightgreen;
-    display: flex;
-    justify-content: center;
-    border-radius: 3px;
-    top: 25%;
-    left: 84%;
-  }
-  .restaurants .card .new-infos p {
-    text-align: center;
-    font-size: 8px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-  .restaurants .card .new-restaurant {
-    border-radius: 15px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  .restaurants .card .new-restaurant .card__image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  .restaurants .card .new-restaurant .card__description {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  .restaurants .card .new-restaurant .card__description .card__text h1 {
-    font-size: 20px;
-  }
-  .restaurants .card .new-restaurant .card__description .card__text p {
-    text-align: left;
-    font-size: 18px;
-    color: gray;
-  }
-  .restaurants .card .new-restaurant .card__description .card__icon {
-    align-self: center;
-    font-size: 30px;
-  }
-  .restaurants .card .new-restaurant .card__description .card__icon .heart-border {
-    color: gray;
-  }
-  .restaurants .card .new-restaurant .card__description .card__icon .heart-full {
-    display: none;
-  }
-  .restaurants .card .new-restaurant .card__description .card__icon:hover .heart-border {
-    display: none;
-  }
-  .restaurants .card .new-restaurant .card__description .card__icon:hover .heart-full {
-    background: linear-gradient(#FF79DA, #9356DC);
-    display: block;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+.header-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+.header-menu__arrow {
+  padding-top: 8px;
+  position: absolute;
+  left: 30px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.header-menu__arrow:hover {
+  transform: scale(1.2);
+}
+.header-menu__arrow i {
+  color: #373737;
+  font-size: 22px;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -625,6 +350,18 @@ h6, span {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     margin-top: 2rem;
+  }
+}
+
+.banner-menu {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+@media all and (min-width: 768px) {
+  .banner-menu {
+    height: 24rem;
+    object-position: 0 60%;
   }
 }
 
