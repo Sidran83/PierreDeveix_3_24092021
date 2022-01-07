@@ -7,3 +7,67 @@
     object-position: 0 60%;
   }
 }
+
+.menu {
+  @include background-gray-color;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -3.8rem;
+  position: relative;
+  &__header, &__section {
+    @include block-margin-x;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 34px;
+    h2 {
+      font-family: $font-title;
+      font-size: 1.65rem;
+    }
+    @include from-big-tablet {
+      flex-direction: column;
+    }
+    .heart-icon {
+      @include empty-heart-icon;
+      padding-right: 20px;
+      cursor: pointer;
+      &:hover {
+        @include filled-heart-icon;
+      }
+    }
+  }
+  &__category {
+    display: block;
+    padding-top: 32px;
+    color: darken($background-gray, 60%);
+    font-size: 1rem;
+    &--border {
+      border-bottom: 3px solid $colour-tertiary;
+      width: 12%;
+      margin: 4px 0 15px 0;
+      @include from-big-tablet {
+        margin: 4px auto 15px auto;
+        width: 20%;
+      }
+    }
+    @include from-big-tablet {
+      @include text-center;
+      padding-top: 40px;
+    }
+  }
+  &__button {
+    text-align: center;
+    button {
+      padding: 15px 50px;
+      margin: 2rem 0 3.5rem 0;
+    }
+  }
+  @include from-big-tablet {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5rem;
+  }
+}

@@ -365,6 +365,84 @@ header img {
   }
 }
 
+.menu {
+  background-color: #F6F6F6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -3.8rem;
+  position: relative;
+}
+.menu__header, .menu__section {
+  margin: 0 20px;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+}
+.menu__header h2 {
+  font-family: "Shrikhand";
+  font-size: 1.65rem;
+}
+@media all and (min-width: 768px) {
+  .menu__header {
+    flex-direction: column;
+  }
+}
+.menu__header .heart-icon {
+  font-size: 1.5rem;
+  color: #444444;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.menu__header .heart-icon:hover {
+  animation: heart-animation 500ms ease-in-out;
+  opacity: 1;
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+.menu__category {
+  display: block;
+  padding-top: 32px;
+  color: #5d5d5d;
+  font-size: 1rem;
+}
+.menu__category--border {
+  border-bottom: 3px solid #99E2D0;
+  width: 12%;
+  margin: 4px 0 15px 0;
+}
+@media all and (min-width: 768px) {
+  .menu__category--border {
+    margin: 4px auto 15px auto;
+    width: 20%;
+  }
+}
+@media all and (min-width: 768px) {
+  .menu__category {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+.menu__button {
+  text-align: center;
+}
+.menu__button button {
+  padding: 15px 50px;
+  margin: 2rem 0 3.5rem 0;
+}
+@media all and (min-width: 768px) {
+  .menu {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5rem;
+  }
+}
+
 /* Font and Icons */
 
 /*# sourceMappingURL=style.css.map */

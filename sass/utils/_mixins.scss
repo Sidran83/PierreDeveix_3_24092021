@@ -41,6 +41,16 @@
   font-weight: bold;
 }
 
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin trim-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 // RESPONSIVITY
 @mixin from-small-tablet {
   @media all and (min-width: map-get($breakpoints, small-tablet)){
