@@ -193,6 +193,110 @@ h6, span {
   }
 }
 
+.menu-card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 14px 22px 14px 18px;
+  margin-bottom: 15px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  animation: menu-card-delay 800ms ease-in-out backwards;
+}
+.menu-card__info {
+  flex: 1;
+  overflow: hidden;
+}
+.menu-card__info span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+.menu-card__info p {
+  padding-top: 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+.menu-card__price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-left: 1.4rem;
+}
+.menu-card__selection {
+  margin: -1rem -5.4rem -1rem 1.2rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  transition: 500ms;
+}
+.menu-card:hover .menu-card__selection {
+  margin-right: -1.4rem;
+}
+.menu-card__selection-tick {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0.26rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition: 600ms 50ms;
+}
+.menu-card:hover .menu-card__selection-tick {
+  transform: rotate(0);
+}
+.menu-card .tick-icon {
+  color: #99E2D0;
+  font-size: 0.8rem;
+}
+
+.menu-card--0 {
+  animation-delay: 0s;
+}
+
+.menu-card--1 {
+  animation-delay: 0.1s;
+}
+
+.menu-card--2 {
+  animation-delay: 0.2s;
+}
+
+.menu-card--3 {
+  animation-delay: 0.3s;
+}
+
+.menu-card--4 {
+  animation-delay: 0.4s;
+}
+
+.menu-card--5 {
+  animation-delay: 0.5s;
+}
+
+.menu-card--6 {
+  animation-delay: 0.6s;
+}
+
+.menu-card--7 {
+  animation-delay: 0.7s;
+}
+
+.menu-card--8 {
+  animation-delay: 0.8s;
+}
+
+.menu-card--9 {
+  animation-delay: 0.9s;
+}
+
 .footer {
   background-color: #373737;
   padding: 25px 25px 35px 25px;

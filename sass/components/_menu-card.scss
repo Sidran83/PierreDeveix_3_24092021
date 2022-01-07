@@ -1,0 +1,68 @@
+.menu-card {
+  @include border-radius;
+  @include box-shadow;
+  @include card-content-padding;
+  margin-bottom: 15px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  animation: menu-card-delay 800ms ease-in-out backwards;
+  &__info {
+    flex: 1;
+    overflow: hidden;
+    span {
+      @include trim-text;
+      display: block;
+    }
+    p {
+      @include text-padding-top;
+      @include trim-text;
+      font-size: 0.95rem;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 0.95rem;
+    font-weight: $medium;
+    padding-left: 1.4rem;
+  }
+  &__selection {
+    margin: -1rem -5.4rem -1rem 1.2rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colour-tertiary;
+    transition: 500ms;
+  }
+  &:hover &__selection {
+    margin-right: -1.4rem;
+  }
+  &__selection-tick {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.26rem 0.25rem 0.25rem 0.25rem;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition: 600ms 50ms;
+  }
+
+  &:hover &__selection-tick {
+    transform: rotate(0);
+  }
+
+  .tick-icon {
+    color: $colour-tertiary;
+    font-size: 0.8rem;
+  }
+}
+
+@for $i from 0 to 10 {
+  .menu-card--#{$i} {
+    animation-delay:  #{$i/10}s;
+  }
+}
+
